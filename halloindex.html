@@ -1,0 +1,673 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Nieuw ttabblad</title>
+<style>
+    #MMCS {
+        position: absolute;
+        top: -5px;
+        left: 80px;
+        width: 110px;
+        height: 110px;
+        color: #000000;
+        font-family: Arial;
+        font-size: 40px;
+    }
+
+    #mmcs {
+        position: absolute;
+        top: 70px;
+        left: 80px;
+        width: 190px;
+        height: 110px;
+        color: #000000;
+        font-family: Arial;
+        font-size: 15px;
+    }
+
+    #Kosteninvoering {
+        position: absolute;
+        top: 115px;
+        left: 155px;
+        width: 110px;
+        height: 110px;
+        color: #000000;
+        font-family: Arial;
+        font-size: 15px;
+    }
+
+    #Productsoortinvoering {
+        position: absolute;
+        top: 115px;
+        left: 20px;
+        width: 110px;
+        height: 110px;
+        color: #000000;
+        font-family: Arial;
+        font-size: 15px;
+    }
+
+    #Belasting {
+        position: absolute;
+        top: 510px;
+        left: 23px;
+        width: 110px;
+        height: 110px;
+        color: #000000;
+        font-family: Arial;
+        font-size: 15px;
+    }
+
+    #Netto-Kosten-Belasting {
+        position: absolute;
+        top: 585px;
+        left: 23px;
+        width: 190px;
+        height: 110px;
+        color: #000000;
+        font-family: Arial;
+        font-size: 15px;
+    }
+
+    #Kostentotaaloverzicht {
+        position: absolute;
+        top: 128px;
+        left: 380px;
+        width: 150px;
+        height: 110px;
+        color: #000000;
+        font-family: Arial;
+        font-size: 15px;
+    }
+
+    #Nettoinkomsten-Belastin-Kosten {
+        position: absolute;
+        top: 265px;
+        left: 380px;
+        width: 250px;
+        height: 110px;
+        color: #000000;
+        font-family: Arial;
+        font-size: 15px;
+    }
+
+    #Inkomsteneuro {
+        position: absolute;
+        top: 65px;
+        left: 380px;
+        width: 150px;
+        height: 110px;
+        color: #000000;
+        font-family: Arial;
+        font-size: 15px;
+    }
+
+    #Belastingeuro {
+        position: absolute;
+        top: 195px;
+        left: 380px;
+        width: 150px;
+        height: 110px;
+        color: #000000;
+        font-family: Arial;
+        font-size: 15px;
+    }
+
+    #Productsoortopbrengst {
+        position: absolute;
+        top: 315px;
+        left: 23px;
+        width: 110px;
+        height: 110px;
+        color: #000000;
+        font-family: Arial;
+        font-size: 15px;
+    }
+
+    #MMCSINLOGKNOP {
+        position: absolute;
+        top: 50px;
+        left: 900px;
+        width: 110px;
+        height: 110px;
+        border-radius: 90px;
+        border-style: solid;
+        border-color: #D3D3D3;
+        background-color: #008000;
+        color: #D3D3D3;
+    }
+
+    #number1 {
+        position: absolute;
+        top: 150px;
+        left: 150px;
+        width: 110px;
+        height: 35px;
+        border-radius: 90px;
+        border-style: solid;
+        border-color: #D3D3D3;
+        background-color: #D3D3D3;
+        color: #000000;
+    }
+
+
+    #number2 {
+        position: absolute;
+        top: 200px;
+        left: 150px;
+        width: 110px;
+        height: 35px;
+        border-radius: 90px;
+        border-style: solid;
+        border-color: #D3D3D3;
+        background-color: #D3D3D3;
+        color: #000000;
+    }
+
+
+    #number3 {
+        position: absolute;
+        top: 250px;
+        left: 150px;
+        width: 110px;
+        height: 35px;
+        border-radius: 90px;
+        border-style: solid;
+        border-color: #D3D3D3;
+        background-color: #D3D3D3;
+        color: #000000;
+    }
+
+    #number4 {
+        position: absolute;
+        top: 545px;
+        left: 20px;
+        width: 110px;
+        height: 35px;
+        border-radius: 90px;
+        border-style: solid;
+        border-color: #D3D3D3;
+        background-color: #D3D3D3;
+        color: #000000;
+    }
+
+
+    #number5 {
+        position: absolute;
+        top: 350px;
+        left: 150px;
+        width: 110px;
+        height: 35px;
+        border-radius: 90px;
+        border-style: solid;
+        border-color: #D3D3D3;
+        background-color: #D3D3D3;
+        color: #000000;
+    }
+
+
+    #number6 {
+        position: absolute;
+        top: 400px;
+        left: 150px;
+        width: 110px;
+        height: 35px;
+        border-radius: 90px;
+        border-style: solid;
+        border-color: #D3D3D3;
+        background-color: #D3D3D3;
+        color: #000000;
+    }
+
+    #number7 {
+        position: absolute;
+        top: 450px;
+        left: 150px;
+        width: 110px;
+        height: 35px;
+        border-radius: 90px;
+        border-style: solid;
+        border-color: #D3D3D3;
+        background-color: #D3D3D3;
+        color: #000000;
+    }
+
+    #number8 {
+        position: absolute;
+        top: 625px;
+        left: 20px;
+        width: 110px;
+        height: 35px;
+        border-radius: 90px;
+        border-style: solid;
+        border-color: #D3D3D3;
+        background-color: #D3D3D3;
+        color: #000000;
+    }
+
+    #calculate {
+        position: absolute;
+        top: 300px;
+        left: 150px;
+        width: 110px;
+        height: 35px;
+        border-radius: 90px;
+        border-style: solid;
+        border-color: #D3D3D3;
+        background-color: #D3D3D3;
+        color: #000000;
+    }
+
+    #calculateinkomsten {
+        position: absolute;
+        top: 500px;
+        left: 150px;
+        width: 110px;
+        height: 35px;
+        border-radius: 90px;
+        border-style: solid;
+        border-color: #D3D3D3;
+        background-color: #D3D3D3;
+        color: #000000;
+    }
+
+    #calculatebelasting {
+        position: absolute;
+        top: 550px;
+        left: 150px;
+        width: 110px;
+        height: 35px;
+        border-radius: 90px;
+        border-style: solid;
+        border-color: #D3D3D3;
+        background-color: #D3D3D3;
+        color: #000000;
+    }
+
+    #calculatenetto {
+        position: absolute;
+        top: 625px;
+        left: 150px;
+        width: 110px;
+        height: 35px;
+        border-radius: 90px;
+        border-style: solid;
+        border-color: #D3D3D3;
+        background-color: #D3D3D3;
+        color: #000000;
+    }
+
+    #Productsoortinput1 {
+        position: absolute;
+        top: 150px;
+        left: 20px;
+        width: 110px;
+        height: 35px;
+        border-radius: 90px;
+        border-style: solid;
+        border-color: #D3D3D3;
+        background-color: #D3D3D3;
+        color: #000000;
+    }
+
+    #Productsoortinput2 {
+        position: absolute;
+        top: 200px;
+        left: 20px;
+        width: 110px;
+        height: 35px;
+        border-radius: 90px;
+        border-style: solid;
+        border-color: #D3D3D3;
+        background-color: #D3D3D3;
+        color: #000000;
+    }
+
+
+    #Productsoortinput3 {
+        position: absolute;
+        top: 250px;
+        left: 20px;
+        width: 110px;
+        height: 35px;
+        border-radius: 90px;
+        border-style: solid;
+        border-color: #D3D3D3;
+        background-color: #D3D3D3;
+        color: #000000;
+    }
+
+    #Productsoortinput4 {
+        position: absolute;
+        top: 350px;
+        left: 20px;
+        width: 110px;
+        height: 35px;
+        border-radius: 90px;
+        border-style: solid;
+        border-color: #D3D3D3;
+        background-color: #D3D3D3;
+        color: #000000;
+    }
+
+    #Productsoortinput5 {
+        position: absolute;
+        top: 400px;
+        left: 20px;
+        width: 110px;
+        height: 35px;
+        border-radius: 90px;
+        border-style: solid;
+        border-color: #D3D3D3;
+        background-color: #D3D3D3;
+        color: #000000;
+    }
+
+    #Productsoortinput6 {
+        position: absolute;
+        top: 450px;
+        left: 20px;
+        width: 110px;
+        height: 35px;
+        border-radius: 90px;
+        border-style: solid;
+        border-color: #D3D3D3;
+        background-color: #D3D3D3;
+        color: #000000;
+    }
+
+    #Uitloggen {
+        position: absolute;
+        top: 17px;
+        left: 1000px;
+        width: 110px;
+        height: 35px;
+        border-radius: 90px;
+        border-style: solid;
+        border-color: #D3D3D3;
+        background-color: #D3D3D3;
+        color: #000000;
+    }
+
+
+    #searchInput {
+        position: absolute;
+        top: 300px;
+        left: 450px;
+        width: 110px;
+        height: 35px;
+        border-radius: 5px;
+        border-style: solid;
+        border-color: #D3D3D3;
+        background-color: #D3D3D3;
+        color: #000000;
+        display: none;
+    }
+
+    #result {
+        position: absolute;
+        top: 165px;
+        left: 380px;
+        width: 110px;
+        height: 35px;
+        border-radius: 90px;
+        border-style: solid;
+        border-color: #D3D3D3;
+        background-color: #D3D3D3;
+        color: #000000;
+    }
+
+    #resulttt {
+        position: absolute;
+        top: 100px;
+        left: 380px;
+        width: 110px;
+        height: 35px;
+        border-radius: 90px;
+        border-style: solid;
+        border-color: #D3D3D3;
+        background-color: #D3D3D3;
+        color: #000000;
+    }
+
+    #resultt {
+        position: absolute;
+        top: 235px;
+        left: 380px;
+        width: 110px;
+        height: 35px;
+        border-radius: 90px;
+        border-style: solid;
+        border-color: #D3D3D3;
+        background-color: #D3D3D3;
+        color: #000000;
+    }
+
+    #resulttttd {
+        position: absolute;
+        top: 305px;
+        left: 380px;
+        width: 110px;
+        height: 35px;
+        border-radius: 90px;
+        border-style: solid;
+        border-color: #D3D3D3;
+        background-color: #D3D3D3;
+        color: #000000;
+    }
+
+    #my-square {
+        position: absolute;
+        top: 70px;
+        left: 360px;
+        width: 410px;
+        height: 350px;
+        border-radius: 20px;
+        z-index: -1;
+        background-color: #F0F8FF;
+    }
+
+    #Projectnaam {
+        position: absolute;
+        top: 30px;
+        left: 360px;
+        width: 250px;
+        height: 25px;
+        border-radius: 20px;
+        background-color: #FFFFFF;
+    }
+
+</style>
+</head>
+    <script>
+        function Inloggen() {
+            document.getElementById("MMCSINLOGKNOP").style.display = "none";
+            document.getElementById("searchInput").style.display = "block";
+        }
+
+        function calculate() {
+            var number1 = document.getElementById("number1").value;
+            var number2 = document.getElementById("number2").value;
+            var number3 = document.getElementById("number3").value;
+            var result = Number(number1) + Number(number2) + Number(number3);
+            document.getElementById("result").innerHTML = result;
+        }
+
+        function calculateinkomsten() {
+            var number5 = document.getElementById("number5").value;
+            var number6 = document.getElementById("number6").value;
+            var number7 = document.getElementById("number7").value;
+            var resulttt = Number(number5) + Number(number6) + Number(number7);
+            document.getElementById("resulttt").innerHTML = resulttt;
+        }
+
+
+        function calculatenetto() {
+            var number5 = document.getElementById("number5").value;
+            var number6 = document.getElementById("number6").value;
+            var number7 = document.getElementById("number7").value;
+            var number1 = document.getElementById("number1").value;
+            var number2 = document.getElementById("number2").value;
+            var number3 = document.getElementById("number3").value;
+            var number4 = document.getElementById("number4").value;
+            var number8 = document.getElementById("number8").value;
+            var resulttttd = (Number(number5) + Number(number6) + Number(number7) - Number(number1) - Number(number2) - Number(number3)) * Number(number8);
+            document.getElementById("resulttttd").innerHTML = resulttttd;
+        }
+
+        function calculatebelasting() {
+            var number5 = document.getElementById("number5").value;
+            var number6 = document.getElementById("number6").value;
+            var number7 = document.getElementById("number7").value;
+            var number1 = document.getElementById("number1").value;
+            var number2 = document.getElementById("number2").value;
+            var number3 = document.getElementById("number3").value;
+            var number4 = document.getElementById("number4").value;
+            var resultt = (Number(number5) + Number(number6) + Number(number7) - Number(number1) - Number(number2) - Number(number3)) * Number(number4);
+            document.getElementById("resultt").innerHTML = resultt;
+        }
+
+        function Uitloggen() {
+            document.getElementById("Uitloggen").style.display = "none";
+            document.getElementById("MMCSINLOGKNOP").style.display = "block";
+            document.getElementById("number1").style.display = "none";
+            document.getElementById("number2").style.display = "none";
+            document.getElementById("number3").style.display = "none";
+            document.getElementById("number4").style.display = "none";
+            document.getElementById("calculate").style.display = "none";
+            document.getElementById("result").style.display = "none";
+            document.getElementById("Kosteninvoering").style.display = "none";
+            document.getElementById("Productsoortinvoering").style.display = "none";
+            document.getElementById("Productsoortinput1").style.display = "none";
+            document.getElementById("Productsoortinput2").style.display = "none";
+            document.getElementById("Productsoortinput3").style.display = "none";
+            document.getElementById("Productsoortinput4").style.display = "none";
+            document.getElementById("Productsoortinput5").style.display = "none";
+            document.getElementById("Productsoortinput6").style.display = "none";
+            document.getElementById("Belasting").style.display = "none";
+            document.getElementById("my-square").style.display = "none";
+            document.getElementById("Projectnaam").style.display = "none";
+            document.getElementById("number5").style.display = "none";
+            document.getElementById("number6").style.display = "none";        
+            document.getElementById("number7").style.display = "none";
+            document.getElementById("Productsoortopbrengst").style.display = "none";
+            document.getElementById("Kostentotaaloverzicht").style.display = "none";
+            document.getElementById("Belastingeuro").style.display = "none";
+            document.getElementById("calculatebelasting").style.display = "none";
+            document.getElementById("resultt").style.display = "none";
+            document.getElementById("calculateinkomsten").style.display = "none";
+            document.getElementById("resulttt").style.display = "none";
+            document.getElementById("Inkomsteneuro").style.display = "none";
+            document.getElementById("calculatenetto").style.display = "none";
+            document.getElementById("Netto-Kosten-Belasting").style.display = "none";
+            document.getElementById("Nettoinkomsten-Belastin-Kosten").style.display = "none";
+            document.getElementById("number8").style.display = "none";
+            document.getElementById("resulttttd").style.display = "none";
+        }
+
+   function search() {
+    var input  = document.getElementById("searchInput").value;
+    if (input === "1234") {
+        document.getElementById("searchInput").style.display = "none";
+        document.getElementById("Uitloggen").style.display = "block";
+        document.getElementById("number1").style.display = "block";
+        document.getElementById("number2").style.display = "block";        
+        document.getElementById("number3").style.display = "block";
+        document.getElementById("calculate").style.display = "block";
+        document.getElementById("result").style.display = "block";
+        document.getElementById("Kosteninvoering").style.display = "block";
+        document.getElementById("Productsoortinvoering").style.display = "block";
+        document.getElementById("Productsoortinput1").style.display = "block";
+        document.getElementById("Productsoortinput2").style.display = "block";
+        document.getElementById("Productsoortinput3").style.display = "block";
+        document.getElementById("Productsoortinput4").style.display = "block";
+        document.getElementById("Productsoortinput5").style.display = "block";
+        document.getElementById("Productsoortinput6").style.display = "block";
+        document.getElementById("number4").style.display = "block";
+        document.getElementById("Belasting").style.display = "block";
+        document.getElementById("my-square").style.display = "block";
+        document.getElementById("Projectnaam").style.display = "block";
+        document.getElementById("number5").style.display = "block";
+        document.getElementById("number6").style.display = "block";        
+        document.getElementById("number7").style.display = "block";
+        document.getElementById("Productsoortopbrengst").style.display = "block";
+        document.getElementById("Kostentotaaloverzicht").style.display = "block";
+        document.getElementById("Belastingeuro").style.display = "block";
+        document.getElementById("calculatebelasting").style.display = "block";
+        document.getElementById("resultt").style.display = "block";
+        document.getElementById("calculateinkomsten").style.display = "block";
+        document.getElementById("resulttt").style.display = "block";
+        document.getElementById("Inkomsteneuro").style.display = "block";
+        document.getElementById("calculatenetto").style.display = "block";
+        document.getElementById("Netto-Kosten-Belasting").style.display = "block";
+        document.getElementById("Nettoinkomsten-Belastin-Kosten").style.display = "block";
+        document.getElementById("number8").style.display = "block";
+        document.getElementById("resulttttd").style.display = "block";
+    }
+    else {
+        alert("Gezochte webpagina bestaat niet!!");
+    }
+}
+
+    </script>
+<body>
+
+
+    <p id="MMCS" style="display: block;">MMCS</p>
+    <p id="mmcs" style="display: block;">(Mega Multifunctionele Choise Software)</p>
+
+    <p id="Kosteninvoering" style="display: none;">Kosten:</p>
+    <p id="Productsoortinvoering" style="display: none;">Productsoort:</p>
+    <p id="Belasting" style="display: none;">Belasting:</p> 
+    <p id="Productsoortopbrengst" style="display: none;">Productsoort:</p> 
+    <p id="Kostentotaaloverzicht" style="display: none;">Kosten:</p>
+    <p id="Belastingeuro" style="display: none;">Belasting in euro's:</p>
+    <p id="Inkomsteneuro" style="display: none;">Brutto inkomsten:</p>
+    <p id="Netto-Kosten-Belasting" style="display: none;">Netto-Kosten-Belasting:</p>
+    <p id="Nettoinkomsten-Belastin-Kosten" style="display: none;">Nettoinkomsten-Kosten-Belasting:</p>
+
+    <button id="MMCSINLOGKNOP" style="display: block;" onclick="Inloggen()" title="Inloggen">Inloggen</button>
+    <button id="Uitloggen" style="display: none;" onclick="Uitloggen()" title="Uitloggen">Uitloggen</button>
+
+    <input type="text" id="searchInput" placeholder="Vul hier uw wachtwoord/pincode in..." onkeydown="if (event.keyCode == 13) search()" title="Vul hier uw wachtwoord/pincode in...">
+
+    <input type="number" id="number1" placeholder="Kosten..." style="display: none;" title="Vul hier uw kosten in...">
+    <input type="number" id="number2" placeholder="Kosten..." style="display: none;" title="Vul hier uw kosten in...">
+    <input type="number" id="number3" placeholder="Kosten..." style="display: none;" title="Vul hier uw kosten in...">
+    <input type="number" id="number4" placeholder="Belasting..." title="Vul hier in hoeveel procent belasting u betaald..."style="display: none;">
+
+    <input type="number" id="number8" placeholder="Belasting..." title="Vul hier in hoeveel procent u overhoud..."style="display: none;">
+    <div id="resulttttd" style="display: none;" title="Nettoinkomsten..."></div>
+
+    <button id="calculate" style="display: none;" onclick="calculate()">Calculate</button>
+    <div id="result" style="display: none;" title="Kosten..."></div>
+
+
+    <button id="calculatebelasting" style="display: none;" onclick="calculatebelasting()">Calculate</button>
+    <div id="resultt" style="display: none;" title="Belasting..."></div>
+
+    <button id="calculateinkomsten" style="display: none;" onclick="calculateinkomsten()">Calculate</button>
+    <div id="resulttt" style="display: none;" title="Inkomsten..."></div>
+
+    <button id="calculatenetto" style="display: none;" onclick="calculatenetto()">Calculate</button>
+    <div id="resultttt" style="display: none;" title="Netto-kosten-belasting..."></div>
+
+    <input type="text" id="Productsoortinput1" placeholder="Productsoort..." style="display:none" title="Vul hier uw productsoort in...">
+    <input type="text" id="Productsoortinput2" placeholder="Productsoort..." style="display:none" title="Vul hier uw productsoort in...">
+    <input type="text" id="Productsoortinput3" placeholder="Productsoort..." style="display:none" title="Vul hier uw productsoort in...">
+
+    <input type="text" id="Projectnaam" placeholder="Voer hier uw projectnaam in..." title="Type hier uw projectnaam"style="display:none">
+
+    <div id="my-square" style="display: none;"></div>
+
+    <input type="number" id="number5" placeholder="Inkomsten..." style="display: none; "title="Vul hier uw inkomsten in...">
+    <input type="number" id="number6" placeholder="Inkomsten.." style="display: none; "title="Vul hier uw inkomsten in...">
+    <input type="number" id="number7" placeholder="Inkomsten..." style="display: none; "title="Vul hier uw inkomsten in...">
+
+    <input type="text" id="Productsoortinput4" placeholder="Productsoort..." style="display:none" title="Vul hier uw productsoort in...">
+    <input type="text" id="Productsoortinput5" placeholder="Productsoort..." style="display:none" title="Vul hier uw productsoort in...">
+    <input type="text" id="Productsoortinput6" placeholder="Productsoort..." style="display:none" title="Vul hier uw productsoort in...">
+
+</body>
+</html>
