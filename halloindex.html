@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -26,11 +27,38 @@
 
 #form-container {
   position: relative; /* Relatieve positionering */
-  top: 130px;
+  top: 143px;
   left: 9px;
   width: 200px;
   height: 55px;
 }
+
+    #form-containerr {
+      max-width: 250px; /* Pas de breedte aan indien nodig */
+      height: 0px; /* Pas de hoogte aan indien nodig */
+      overflow-x: auto; /* Voeg een verticale scrollbalk toe */
+      border: 1px solid #ccc; /* Optionele rand voor visuele afbakening */
+      padding: 40px; /* Optionele padding voor ruimte rond de velden */
+      overflow-x: hidden;
+      overflow-y: scroll;
+      display: none;
+    }
+
+    input[type="number"] {
+  width: 1%;
+  padding-top: 0px; /* Padding bovenkant */
+  padding-right: 0px; /* Padding rechterkant */
+  padding-bottom: 0px; /* Padding onderkant */
+  padding-left: 0px; /* Padding linkerkant */
+    }
+
+#form-containerr {
+  position: relative; /* Relatieve positionering */
+  top: 210px;
+  left: 9px;
+  width: 200px;
+  height: 55px;
+}			
     #MMCS {
         position: absolute;
         top: -5px;
@@ -218,12 +246,12 @@
         background-color: #D3D3D3;
         color: #000000;
     }
-
+			
 
     #number5 {
         position: absolute;
-        top: 350px;
-        left: 150px;
+        top: 0px;
+        left: 145px;
         width: 110px;
         height: 35px;
         border-radius: 90px;
@@ -236,8 +264,8 @@
 
     #number6 {
         position: absolute;
-        top: 400px;
-        left: 150px;
+        top: 50px;
+        left: 145px;
         width: 110px;
         height: 35px;
         border-radius: 90px;
@@ -249,8 +277,8 @@
 
     #number7 {
         position: absolute;
-        top: 450px;
-        left: 150px;
+        top: 100px;
+        left: 145px;
         width: 110px;
         height: 35px;
         border-radius: 90px;
@@ -312,10 +340,48 @@
         color: #000000;
     }
 
+    #number100 {
+        position: absolute;
+        top: 250px;
+        left: 145px;
+        width: 110px;
+        height: 35px;
+        border-radius: 90px;
+        border-style: solid;
+        border-color: #D3D3D3;
+        background-color: #D3D3D3;
+        color: #000000;
+    }
+
+    #number101 {
+        position: absolute;
+        top: 150px;
+        left: 145px;
+        width: 110px;
+        height: 35px;
+        border-radius: 90px;
+        border-style: solid;
+        border-color: #D3D3D3;
+        background-color: #D3D3D3;
+        color: #000000;
+    }
+
+    #number102 {
+        position: absolute;
+        top: 200px;
+        left: 145px;
+        width: 110px;
+        height: 35px;
+        border-radius: 90px;
+        border-style: solid;
+        border-color: #D3D3D3;
+        background-color: #D3D3D3;
+        color: #000000;
+    }
     #calculate {
         position: absolute;
         top: 300px;
-        left: 150px;
+        left: 165px;
         width: 110px;
         height: 35px;
         border-radius: 90px;
@@ -328,7 +394,7 @@
     #calculateinkomsten {
         position: absolute;
         top: 500px;
-        left: 150px;
+        left: 165px;
         width: 110px;
         height: 35px;
         border-radius: 90px;
@@ -341,7 +407,7 @@
     #calculatebelasting {
         position: absolute;
         top: 550px;
-        left: 150px;
+        left: 165px;
         width: 110px;
         height: 35px;
         border-radius: 90px;
@@ -354,7 +420,7 @@
     #calculatenetto {
         position: absolute;
         top: 625px;
-        left: 150px;
+        left: 165px;
         width: 110px;
         height: 35px;
         border-radius: 90px;
@@ -406,8 +472,8 @@
 
     #Productsoortinput4 {
         position: absolute;
-        top: 350px;
-        left: 20px;
+        top: 100px;
+        left: 10px;
         width: 110px;
         height: 35px;
         border-radius: 90px;
@@ -419,8 +485,8 @@
 
     #Productsoortinput5 {
         position: absolute;
-        top: 400px;
-        left: 20px;
+        top: 50px;
+        left: 10px;
         width: 110px;
         height: 35px;
         border-radius: 90px;
@@ -432,8 +498,8 @@
 
     #Productsoortinput6 {
         position: absolute;
-        top: 450px;
-        left: 20px;
+        top: 0px;
+        left: 10px;
         width: 110px;
         height: 35px;
         border-radius: 90px;
@@ -482,6 +548,44 @@
         color: #000000;
     }
 
+    #Productsoortinput100 {
+        position: absolute;
+        top: 150px;
+        left: 10px;
+        width: 110px;
+        height: 35px;
+        border-radius: 90px;
+        border-style: solid;
+        border-color: #D3D3D3;
+        background-color: #D3D3D3;
+        color: #000000;
+    }
+
+    #Productsoortinput101 {
+        position: absolute;
+        top: 200px;
+        left: 10px;
+        width: 110px;
+        height: 35px;
+        border-radius: 90px;
+        border-style: solid;
+        border-color: #D3D3D3;
+        background-color: #D3D3D3;
+        color: #000000;
+    }
+
+    #Productsoortinput102 {
+        position: absolute;
+        top: 250px;
+        left: 10px;
+        width: 110px;
+        height: 35px;
+        border-radius: 90px;
+        border-style: solid;
+        border-color: #D3D3D3;
+        background-color: #D3D3D3;
+        color: #000000;
+    }
 
     #Uitloggen {
         position: absolute;
@@ -607,7 +711,10 @@
             var number5 = document.getElementById("number5").value;
             var number6 = document.getElementById("number6").value;
             var number7 = document.getElementById("number7").value;
-            var resulttt = Number(number5) + Number(number6) + Number(number7);
+            var number100 = document.getElementById("number100").value;
+            var number101 = document.getElementById("number101").value;
+            var number102 = document.getElementById("number102").value;
+            var resulttt = Number(number5) + Number(number6) + Number(number7) + Number(number100) + Number(number101) + Number(number102);
             document.getElementById("resulttt").innerHTML = resulttt;
         }
 
@@ -621,7 +728,13 @@
             var number3 = document.getElementById("number3").value;
             var number4 = document.getElementById("number4").value;
             var number8 = document.getElementById("number8").value;
-            var resulttttd = (Number(number5) + Number(number6) + Number(number7) - Number(number1) - Number(number2) - Number(number3)) * Number(number8);
+            var number100 = document.getElementById("number100").value;
+            var number101 = document.getElementById("number101").value;
+            var number102 = document.getElementById("number102").value;
+            var number12 = document.getElementById("number12").value;
+            var number13 = document.getElementById("number13").value;
+            var number14 = document.getElementById("number14").value;
+            var resulttttd = (Number(number5) + Number(number6) + Number(number7) + Number(number100) + Number(number101) + Number(number102) - Number(number1) - Number(number2) - Number(number3) - Number(number12) - Number(number13) - Number(number14)) * Number(number8);
             document.getElementById("resulttttd").innerHTML = resulttttd;
         }
 
@@ -633,7 +746,13 @@
             var number2 = document.getElementById("number2").value;
             var number3 = document.getElementById("number3").value;
             var number4 = document.getElementById("number4").value;
-            var resultt = (Number(number5) + Number(number6) + Number(number7) - Number(number1) - Number(number2) - Number(number3)) * Number(number4);
+            var number100 = document.getElementById("number100").value;
+            var number101 = document.getElementById("number101").value;
+            var number12 = document.getElementById("number12").value;
+            var number13 = document.getElementById("number13").value;
+            var number14 = document.getElementById("number14").value;
+            var number102 = document.getElementById("number102").value;
+            var resultt = (Number(number5) + Number(number6) + Number(number7) + Number(number100) + Number(number101) + Number(number102) - Number(number12) - Number(number13) - Number(number14) - Number(number1) - Number(number2) - Number(number3)) * Number(number4);
             document.getElementById("resultt").innerHTML = resultt;
         }
 
@@ -660,6 +779,9 @@
             document.getElementById("Productsoortinput7").style.display = "none";
             document.getElementById("Productsoortinput8").style.display = "none";
             document.getElementById("Productsoortinput9").style.display = "none";
+            document.getElementById("Productsoortinput100").style.display = "none";
+            document.getElementById("Productsoortinput101").style.display = "none";
+            document.getElementById("Productsoortinput102").style.display = "none";
             document.getElementById("Belasting").style.display = "none";
             document.getElementById("my-square").style.display = "none";
             document.getElementById("Projectnaam").style.display = "none";
@@ -680,6 +802,7 @@
             document.getElementById("number8").style.display = "none";
             document.getElementById("resulttttd").style.display = "none";
             document.getElementById("form-container").style.display = "none";
+            document.getElementById("form-containerr").style.display = "none";
         }
 
    function search() {
@@ -706,6 +829,9 @@
         document.getElementById("Productsoortinput7").style.display = "block";
         document.getElementById("Productsoortinput8").style.display = "block";
         document.getElementById("Productsoortinput9").style.display = "block";
+        document.getElementById("Productsoortinput100").style.display = "block";
+        document.getElementById("Productsoortinput101").style.display = "block";
+        document.getElementById("Productsoortinput102").style.display = "block";
         document.getElementById("number4").style.display = "block";
         document.getElementById("Belasting").style.display = "block";
         document.getElementById("my-square").style.display = "block";
@@ -713,6 +839,9 @@
         document.getElementById("number5").style.display = "block";
         document.getElementById("number6").style.display = "block";        
         document.getElementById("number7").style.display = "block";
+        document.getElementById("number100").style.display = "block";
+        document.getElementById("number101").style.display = "block";        
+        document.getElementById("number102").style.display = "block";
         document.getElementById("Productsoortopbrengst").style.display = "block";
         document.getElementById("Kostentotaaloverzicht").style.display = "block";
         document.getElementById("Belastingeuro").style.display = "block";
@@ -727,6 +856,7 @@
         document.getElementById("number8").style.display = "block";
         document.getElementById("resulttttd").style.display = "block";
         document.getElementById("form-container").style.display = "block";
+        document.getElementById("form-containerr").style.display = "block";
     }
     else {
         alert("Gezochte webpagina bestaat niet!!");
@@ -798,13 +928,27 @@
 
     <div id="my-square" style="display: none;"></div>
 
+     <div id="form-containerr">
+
+     <form-containerr>
+
     <input type="number" id="number5" placeholder="Inkomsten..." style="display: none; "title="Vul hier uw inkomsten in...">
     <input type="number" id="number6" placeholder="Inkomsten.." style="display: none; "title="Vul hier uw inkomsten in...">
     <input type="number" id="number7" placeholder="Inkomsten..." style="display: none; "title="Vul hier uw inkomsten in...">
+    <input type="number" id="number100" placeholder="Inkomsten..." style="display: none; "title="Vul hier uw inkomsten in...">
+    <input type="number" id="number101" placeholder="Inkomsten..." style="display: none; "title="Vul hier uw inkomsten in...">
+    <input type="number" id="number102" placeholder="Inkomsten..." style="display: none; "title="Vul hier uw inkomsten in...">
+
 
     <input type="text" id="Productsoortinput4" placeholder="Productsoort..." style="display:none" title="Vul hier uw productsoort in...">
     <input type="text" id="Productsoortinput5" placeholder="Productsoort..." style="display:none" title="Vul hier uw productsoort in...">
     <input type="text" id="Productsoortinput6" placeholder="Productsoort..." style="display:none" title="Vul hier uw productsoort in...">
+    <input type="text" id="Productsoortinput100" placeholder="Productsoort..." style="display:none" title="Vul hier uw productsoort in...">
+    <input type="text" id="Productsoortinput101" placeholder="Productsoort..." style="display:none" title="Vul hier uw productsoort in...">
+    <input type="text" id="Productsoortinput102" placeholder="Productsoort..." style="display:none" title="Vul hier uw productsoort in...">
+
+     </form-containerr>
+     </div>
 
 </body>
 </html>
